@@ -1,0 +1,9 @@
+[druid] 2018-10-24 16:25:45,824 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-10-24 16:25:45,825 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-10-24 16:25:46,452 [main           ] WARN  .mapreduce.JobResourceUploader {1} - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+   [druid] 2018-10-24 16:25:46,981 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Cleaning up the staging area file:/home/hadoop/hdfs/tmp/mapred/staging/newforesee393934067/.staging/job_local393934067_0001
+   [druid] 2018-10-24 16:27:58,127 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-10-24 16:27:58,128 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-10-24 16:27:58,706 [main           ] WARN  .mapreduce.JobResourceUploader {1} - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+   [druid] 2018-10-24 16:27:59,235 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Cleaning up the staging area file:/home/hadoop/hdfs/tmp/mapred/staging/newforesee224645011/.staging/job_local224645011_0001
+   

@@ -11,25 +11,34 @@ import java.util.Map;
  */
 public class JointUtil {
 
-    public static Text joint(String...strings) {
+    /**
+     * 将传入的字段按顺序拼接
+     * @param strings 需要拼接的字段
+     * @return
+     */
+    public static Text joint(String separator,String...strings) {
 
-        return new Text(appender(strings).toString());
+        return new Text(appender(separator,strings).toString());
     }
 
-
-    private static StringBuilder appender(String... strings){
+    /**
+     * 拼接
+     * @param strings
+     * @return
+     */
+    private static StringBuilder appender(String separator,String... strings){
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < strings.length; i++) {
             if (i == strings.length - 1) {
                 sb.append(strings[i]);
             } else
-                sb.append(strings[i]).append("\001");
+                sb.append(strings[i]).append(separator);
         }
         return sb;
     }
 
 
-    public static void colum2Map(Path[] paths,Map<String, String> map, int columKey, int... valves) throws IOException {
+    public static void colum2Map(Path[] paths,Map<String, String> map, String separator,int columKey, int... valves) throws IOException {
         for (Path path : paths) {
             BufferedReader br;
             String str;
@@ -44,7 +53,7 @@ public class JointUtil {
                     strings[i++]=strs[valve];
                 }
 
-                map.put(strs[columKey], appender(strings).toString());
+                map.put(strs[columKey], appender(separator,strings).toString());
             }
             br.close();
 

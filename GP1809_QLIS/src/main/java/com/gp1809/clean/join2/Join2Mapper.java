@@ -22,7 +22,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class Join2Mapper extends Mapper<LongWritable, Text, Text, NullWritable> {
     //定义两个内存数据结构来存储缓存文件中的内容
-    public Map<String, String> examMap = new ConcurrentHashMap<>();
+    private Map<String, String> examMap = new ConcurrentHashMap<>();
 
 
     @Override
@@ -30,27 +30,14 @@ public class Join2Mapper extends Mapper<LongWritable, Text, Text, NullWritable> 
 
         //首先获取缓存文件路径
         Path[] paths = context.getLocalCacheFiles();
-        JointUtil.colum2Map(paths, examMap, 0, 1);
-//        for (Path path : paths) {
-//            BufferedReader br;
-//            String str;
-//
-//            br = new BufferedReader(new FileReader(new File(path.toString())));
-//            while ((str = br.readLine()) != null) {
-//                String strs[] = str.split("\\001");
-//                examMap.put(strs[0], strs[1]);
-//            }
-//            br.close();
-//
-//        }
+        JointUtil.colum2Map(paths, examMap, "\001",0, 1);
     }
 
     @Override
     protected void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException {
         String[] strings = value.toString().split("\\001");
-        //String[] join = {strings[1], strings[8], strings[6], strings[3], MD5Util.MD5(strings[4]), examMap.get(strings[1])};
-        Text text = JointUtil.joint(strings[1], strings[8], strings[6], strings[3], MD5Util.MD5(strings[4]), examMap.get(strings[1]));
+        Text text = JointUtil.joint("\001",strings[1], strings[8], strings[6], strings[3], MD5Util.MD5(strings[4]), examMap.get(strings[1]));
         context.write(text, NullWritable.get());
     }
 }

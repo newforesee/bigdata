@@ -33,7 +33,7 @@ public class Join3Runner {
         protected void setup(Context context) throws IOException, InterruptedException {
             //首先获取缓存文件路径
             Path[] paths = context.getLocalCacheFiles();
-            JointUtil.colum2Map(paths,examMap,1,0,3);
+            JointUtil.colum2Map(paths,examMap,"\001",1,0,3);
 
         }
 

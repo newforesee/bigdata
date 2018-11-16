@@ -1,9 +1,75 @@
-[druid] 2018-10-24 16:25:45,824 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
-   [druid] 2018-10-24 16:25:45,825 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
-   [druid] 2018-10-24 16:25:46,452 [main           ] WARN  .mapreduce.JobResourceUploader {1} - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
-   [druid] 2018-10-24 16:25:46,981 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Cleaning up the staging area file:/home/hadoop/hdfs/tmp/mapred/staging/newforesee393934067/.staging/job_local393934067_0001
-   [druid] 2018-10-24 16:27:58,127 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
-   [druid] 2018-10-24 16:27:58,128 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
-   [druid] 2018-10-24 16:27:58,706 [main           ] WARN  .mapreduce.JobResourceUploader {1} - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
-   [druid] 2018-10-24 16:27:59,235 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Cleaning up the staging area file:/home/hadoop/hdfs/tmp/mapred/staging/newforesee224645011/.staging/job_local224645011_0001
+[druid] 2018-11-12 10:28:51,131 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-11-12 10:28:51,133 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-11-12 10:29:55,758 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-11-12 10:29:55,759 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-11-12 10:29:56,352 [main           ] WARN  .mapreduce.JobResourceUploader {1} - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+   [druid] 2018-11-12 10:29:56,872 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Cleaning up the staging area file:/home/hadoop/hdfs/tmp/mapred/staging/newforesee1490303635/.staging/job_local1490303635_0001
+   [druid] 2018-11-12 10:35:52,344 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-11-12 10:35:52,346 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-11-12 10:35:53,002 [main           ] WARN  .mapreduce.JobResourceUploader {1} - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+   [druid] 2018-11-12 10:35:53,516 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Cleaning up the staging area file:/home/hadoop/hdfs/tmp/mapred/staging/newforesee894967365/.staging/job_local894967365_0001
+   [druid] 2018-11-12 10:36:22,903 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-11-12 10:36:22,904 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-11-12 10:36:23,487 [main           ] WARN  .mapreduce.JobResourceUploader {1} - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+   [druid] 2018-11-12 10:36:24,001 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Cleaning up the staging area file:/home/hadoop/hdfs/tmp/mapred/staging/newforesee783179062/.staging/job_local783179062_0001
+   [druid] 2018-11-12 10:42:56,086 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-11-12 10:42:56,088 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-11-12 10:42:56,700 [main           ] WARN  .mapreduce.JobResourceUploader {1} - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+   [druid] 2018-11-12 10:42:57,220 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Cleaning up the staging area file:/home/hadoop/hdfs/tmp/mapred/staging/newforesee1168354919/.staging/job_local1168354919_0001
+   [druid] 2018-11-12 10:47:05,167 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-11-12 10:47:05,168 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-11-12 10:47:05,470 [main           ] WARN  .mapreduce.JobResourceUploader {1} - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+   [druid] 2018-11-12 10:47:05,478 [main           ] WARN  .mapreduce.JobResourceUploader {1} - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+   [druid] 2018-11-12 10:47:05,612 [main           ] INFO  duce.lib.input.FileInputFormat {1} - Total input paths to process : 1
+   [druid] 2018-11-12 10:47:05,697 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - number of splits:1
+   [druid] 2018-11-12 10:47:05,833 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Submitting tokens for job: job_local435844372_0001
+   [druid] 2018-11-12 10:47:05,963 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - The url to track the job: http://localhost:8080/
+   [druid] 2018-11-12 10:47:05,963 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Running job: job_local435844372_0001
+   [druid] 2018-11-12 10:47:05,964 [Thread-14      ] INFO  e.hadoop.mapred.LocalJobRunner {1} - OutputCommitter set in config null
+   [druid] 2018-11-12 10:47:05,970 [Thread-14      ] INFO  lib.output.FileOutputCommitter {1} - File Output Committer Algorithm version is 1
+   [druid] 2018-11-12 10:47:05,972 [Thread-14      ] INFO  e.hadoop.mapred.LocalJobRunner {1} - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+   [druid] 2018-11-12 10:47:06,018 [Thread-14      ] INFO  e.hadoop.mapred.LocalJobRunner {1} - Waiting for map tasks
+   [druid] 2018-11-12 10:47:06,019 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - Starting task: attempt_local435844372_0001_m_000000_0
+   [druid] 2018-11-12 10:47:06,041 [ask Executor #0] INFO  lib.output.FileOutputCommitter {1} - File Output Committer Algorithm version is 1
+   [druid] 2018-11-12 10:47:06,048 [ask Executor #0] INFO  rn.util.ProcfsBasedProcessTree {1} - ProcfsBasedProcessTree currently is supported only on Linux.
+   [druid] 2018-11-12 10:47:06,048 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} -  Using ResourceCalculatorProcessTree : null
+   [druid] 2018-11-12 10:47:06,051 [ask Executor #0] INFO  g.apache.hadoop.mapred.MapTask {1} - Processing split: hdfs://master:9000/qlis/input/answer_paper/part-m-00000:0+1437732
+   [druid] 2018-11-12 10:47:06,404 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - 
+   [druid] 2018-11-12 10:47:06,971 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Job job_local435844372_0001 running in uber mode : false
+   [druid] 2018-11-12 10:47:06,980 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} -  map 0% reduce 0%
+   [druid] 2018-11-12 10:47:07,163 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} - Task:attempt_local435844372_0001_m_000000_0 is done. And is in the process of committing
+   [druid] 2018-11-12 10:47:07,171 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - 
+   [druid] 2018-11-12 10:47:07,171 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} - Task attempt_local435844372_0001_m_000000_0 is allowed to commit now
+   [druid] 2018-11-12 10:47:07,186 [ask Executor #0] INFO  lib.output.FileOutputCommitter {1} - Saved output of task 'attempt_local435844372_0001_m_000000_0' to hdfs://master:9000/qlis/tmp/join1/_temporary/0/task_local435844372_0001_m_000000
+   [druid] 2018-11-12 10:47:07,187 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - map
+   [druid] 2018-11-12 10:47:07,187 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} - Task 'attempt_local435844372_0001_m_000000_0' done.
+   [druid] 2018-11-12 10:47:07,187 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - Finishing task: attempt_local435844372_0001_m_000000_0
+   [druid] 2018-11-12 10:47:07,187 [Thread-14      ] INFO  e.hadoop.mapred.LocalJobRunner {1} - map task executor complete.
+   [druid] 2018-11-12 10:47:07,986 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} -  map 100% reduce 0%
+   [druid] 2018-11-12 10:47:07,986 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Job job_local435844372_0001 completed successfully
+   [druid] 2018-11-12 10:47:08,000 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Counters: 20
+	File System Counters
+		FILE: Number of bytes read=181
+		FILE: Number of bytes written=285071
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1437732
+		HDFS: Number of bytes written=16093
+		HDFS: Number of read operations=7
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Map-Reduce Framework
+		Map input records=542
+		Map output records=878
+		Input split bytes=120
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=186646528
+	File Input Format Counters 
+		Bytes Read=1437732
+	File Output Format Counters 
+		Bytes Written=16093
    

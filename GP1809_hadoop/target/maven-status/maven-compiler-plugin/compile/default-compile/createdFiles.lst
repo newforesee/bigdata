@@ -1,0 +1,11 @@
+com\qfedu\bigdata\hdfsApi\catFileDemo.class
+com\qfedu\bigdata\mr\day14\subjectAvg.class
+com\qfedu\bigdata\mr\day14\subjectAvg$MyMapper.class
+com\qfedu\bigdata\mr\WordCount$WCMapper.class
+com\qfedu\bigdata\mr\day14\highTem$MyMapper.class
+com\qfedu\bigdata\mr\day14\subjectAvg$MyReducer.class
+com\qfedu\bigdata\mr\day14\highTem.class
+com\qfedu\bigdata\mr\WordCount.class
+com\qfedu\bigdata\mr\test.class
+com\qfedu\bigdata\mr\day14\highTem$MyReducer.class
+com\qfedu\bigdata\mr\WordCount$WCReducer.class

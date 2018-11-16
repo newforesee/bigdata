@@ -15,7 +15,7 @@ public class PQSTable {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         Configuration conf = new Configuration();
-//        conf.set("fs.defaultFS", "file:///");
+        conf.set("fs.defaultFS", "hdfs://master:9000/");
 //        conf.set("mapreduce.framework.name", "local");
 
         Job job = Job.getInstance(conf, "Objectvie_Anwser_TB");

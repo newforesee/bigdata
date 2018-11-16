@@ -1,0 +1,19 @@
+<configuration>
+<!--指定hdfs的默认的nameservice为gp1809-->
+<property>
+  <name>fs.defaultFS</name>
+  <value>hdfs://gp1809</value>
+</property>
+
+<!-- 指定hadoop临时目录 -->
+<property>
+	<name>hadoop.tmp.dir</name>
+	<value>/usr/local/hadoopdata/tmp</value>
+</property>
+
+<!-- 指定zookeeper地址 -->
+<property>
+	<name>ha.zookeeper.quorum</name>
+	<value>hadoop05:2181,hadoop06:2181,hadoop07:2181</value>
+</property>
+</configuration>

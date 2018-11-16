@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="storm-day06-mahout" />
+        <module name="storm-day06-mr" />
+        <module name="storm-day06-recommend" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="storm-day06" target="1.5" />
+      <module name="storm-day06-mahout" target="1.5" />
+      <module name="storm-day06-mr" target="1.7" />
+      <module name="storm-day06-recommend" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,80 @@
+<configuration>
+<!--指定hdfs的那么service的名字，这里的名字应该和core-site.xml中的名字一致-->
+<property>
+  <name>dfs.nameservices</name>
+  <value>gp1809</value>
+</property>
+
+<!--指定gp1809下有两个namenode，分别是nn1，nn2-->
+<property>
+  <name>dfs.ha.namenodes.gp1809</name>
+  <value>nn1,nn2</value>
+</property>
+
+<!--指定nn1的内部通讯RPC地址-->
+<property>
+  <name>dfs.namenode.rpc-address.gp1809.nn1</name>
+  <value>hadoop05:9000</value>
+</property>
+<!--指定nn2的内部通讯RPC地址-->
+<property>
+  <name>dfs.namenode.rpc-address.gp1809.nn2</name>
+  <value>hadoop06:9000</value>
+</property>
+
+<!--指定nn1的web ui的通讯地址-->
+<property>
+  <name>dfs.namenode.http-address.gp1809.nn1</name>
+  <value>hadoop05:50070</value>
+</property>
+<!--指定nn2的web ui的通讯地址-->
+<property>
+  <name>dfs.namenode.http-address.gp1809.nn2</name>
+  <value>hadoop06:50070</value>
+</property>
+
+<!--指定namenode的元数据存放在journalnode上的存放路径-->
+<property>
+  <name>dfs.namenode.shared.edits.dir</name>
+  <value>qjournal://hadoop05:8485;hadoop06:8485;hadoop07:8485/gp1809</value>
+</property>
+
+<!--配置失败转移的驱动类-->
+<property>
+  <name>dfs.client.failover.proxy.provider.gp1809</name>
+  <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+</property>
+
+<!--配置隔离机制的方式，可以配置多种机制，每个机制换行分割-->
+<property>
+  <name>dfs.ha.fencing.methods</name>
+  <value>
+  sshfence
+  shell(/bin/true)
+  </value>
+</property>
+
+<!--使用ssh隔离机制时需要ssh免密登录-->
+<property>
+   <name>dfs.ha.fencing.ssh.private-key-files</name>
+   <value>/root/.ssh/id_rsa</value>
+</property>
+
+<!--配置ssh方式登录到namenode的超时时间-->
+<property>
+    <name>dfs.ha.fencing.ssh.connect-timeout</name>
+    <value>30000</value>
+</property>
+
+<!--指定ournalnode上日志文件的存放路径-->
+<property>
+  <name>dfs.journalnode.edits.dir</name>
+  <value>/usr/local/hadoopdata/journaldata</value>
+</property>
+
+<!-- 开启NameNode失败自动切换 -->
+<property>
+	<name>dfs.ha.automatic-failover.enabled</name>
+	<value>true</value>
+</property>
+</configuration>

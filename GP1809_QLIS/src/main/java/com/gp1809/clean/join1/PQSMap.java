@@ -25,7 +25,7 @@ public class PQSMap extends Mapper<LongWritable, Text, NullWritable, Text> {
         String lines = value.toString();
         String[] words = lines.split("\\001");
 
-        JSONObject json = null;
+        JSONObject json;
         try {
             json = new JSONObject(words[16]);
             //取外层所有的key的Iterator集合
@@ -45,7 +45,7 @@ public class PQSMap extends Mapper<LongWritable, Text, NullWritable, Text> {
 
                     String[] arr = {words[5], title, score};
 
-                    k.set(JointUtil.joint(arr));
+                    k.set(JointUtil.joint("\001",arr));
 
                     context.write(NullWritable.get(), k);
                 }

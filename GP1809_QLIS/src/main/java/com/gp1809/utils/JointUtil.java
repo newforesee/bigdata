@@ -38,6 +38,16 @@ public class JointUtil {
     }
 
 
+    /**
+     * 将缓存文件按行取出,按照指定key和value存入map,传入value为可变参数
+     *
+     * @param paths     缓存文件路径
+     * @param map       数据要存入的map
+     * @param separator 两个字段之间的切割符
+     * @param columKey  key所在的字段号(从0开始)
+     * @param valves    value字段号,可变参数,可以用数组传入,传入-1将取本行所有数据
+     * @throws IOException 由于涉及缓存文件读取,可能会抛出IOException
+     */
     public static void colum2Map(Path[] paths,Map<String, String> map, String separator,int columKey, int... valves) throws IOException {
         for (Path path : paths) {
             BufferedReader br;
